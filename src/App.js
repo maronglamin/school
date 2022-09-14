@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar';
+import Yalding from './components/Yalding';
+import Add from './components/users/Add';
+import ViewStudent from './components/users/View_student';
+import List from './components/users/List';
+import Edit from './components/users/Edit';
 
-function App() {
+let App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <React.Fragment>
+        <NavBar />
+        <Routes>
+          <Route path={'/'} element={<Navigate to={'/yalding'} />} />
+          <Route path={'/yalding'} element={<Yalding />} />
+          <Route path={'/users/add'} element={<Add />} />
+          <Route path={'/student/:userId'} element={<ViewStudent />} />
+          <Route path={'/students'} element={<List />} />
+          <Route path={'/student/edit/:userId'} element={<Edit />} />
+        </Routes>
+      </React.Fragment>
     </div>
   );
-}
+};
 
 export default App;

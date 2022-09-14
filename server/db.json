@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "fname": "Modou",
+      "mname": "Lamin",
+      "lname": "Marong",
+      "email": "collab@collab.com",
+      "pschool": "Manduar Lower Basic School",
+      "address": "Manduar",
+      "photo": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "id": "8Gpd3XN"
+    },
+    {
+      "fname": "Ebrima",
+      "mname": "b",
+      "lname": "Dahaba",
+      "email": "eb@gmail.com",
+      "pschool": "Soma Lower Basic",
+      "address": "Soma",
+      "photo": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "id": "tJKD__S"
+    }
+  ],
+  "class": [
+    {
+      "id": "1",
+      "name": "Grade 7"
+    },
+    {
+      "id": "2",
+      "name": "Grade 8"
+    },
+    {
+      "id": "3",
+      "name": "Grade 9"
+    }
+  ]
+}
